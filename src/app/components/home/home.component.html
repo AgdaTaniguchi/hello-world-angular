@@ -1,0 +1,39 @@
+<main>
+  <section class="spacing">
+    <h1>Últimas séries assistidas</h1>
+    <div class="list">
+      @for (book of books; track $index) {
+      <app-media-card
+        title="{{ book.title }}"
+        [date]="book.date"
+        [rating]="book.rating"
+      />
+      }
+    </div>
+  </section>
+  <section class="spacing">
+    <h1>Últimos livros lidos</h1>
+    <div class="list">
+      @for (book of books; track $index) {
+      <app-media-card
+        title="{{ book.title }}"
+        [date]="book.date"
+        [rating]="book.rating"
+      />
+      }
+    </div>
+  </section>
+
+  <section class="spacing">
+    <h1>Últimos filmes vistos</h1>
+    <div class="list">
+      @for (book of books; track $index) {
+      <app-media-card
+        title="{{ book.title }}"
+        [date]="book.date"
+        [rating]="book.rating"
+      />
+      }
+    </div>
+  </section>
+</main>

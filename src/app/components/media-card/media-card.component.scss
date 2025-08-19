@@ -1,0 +1,39 @@
+:host {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.card {
+  width: 100%;
+  max-width: 230px;
+  height: 100%;
+  border: 3px solid var(--headline);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .image-box {
+    width: 100%;
+    background: #838383;
+    aspect-ratio: 3 / 4;
+  }
+
+  .info-box {
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .card--header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 100;
+      font-size: 0.9rem;
+    }
+
+    .title {
+      color: var(--headline);
+    }
+  }
+}

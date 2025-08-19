@@ -1,0 +1,29 @@
+header {
+  color: var(--headline);
+  padding: 1.5rem 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active {
+  background: var(--button);
+}
+
+nav {
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    a {
+      border-radius: var(--border-radius);
+      padding: 0.5rem 1rem;
+      transition-duration: var(--transition-duration);
+      &:hover {
+        background: var(--button);
+      }
+    }
+  }
+}
